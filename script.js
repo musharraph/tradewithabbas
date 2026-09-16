@@ -134,7 +134,7 @@
    GLOBAL COMMUNITY CLICK
    ========================================= */
 
-const COMMUNITY_URL = "https://bit.ly/4r41drq";
+const COMMUNITY_URL = "https://t.me/+BgJ9E-FwayFlOWY8";
 
 document.addEventListener("click", function (event) {
 

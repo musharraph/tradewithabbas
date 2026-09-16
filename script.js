@@ -129,3 +129,34 @@
     draw(width, height);
   }, 720);
 })();
+
+/* =========================================
+   GLOBAL COMMUNITY CLICK
+   ========================================= */
+
+const COMMUNITY_URL = "https://bit.ly/4r41drq";
+
+document.addEventListener("click", function (event) {
+
+  // If user clicked an existing link or button,
+  // let that element work normally.
+  const interactive = event.target.closest(
+    "a, button, input, select, textarea, summary, label"
+  );
+
+  if (interactive) {
+    return;
+  }
+
+  // Ignore clicks on the menu/canvas mechanics
+  if (
+    event.target.closest(".menu-toggle") ||
+    event.target.closest(".nav-links")
+  ) {
+    return;
+  }
+
+  // Any other area of the page → VIP Community
+  window.location.href = COMMUNITY_URL;
+
+});

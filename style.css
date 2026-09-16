@@ -1028,3 +1028,191 @@ body.page-clickable label,
 body.page-clickable summary {
   cursor: pointer;
 }
+
+
+/* =========================================
+   FINAL MOBILE HERO POLISH
+   Compact first screen + cards away from face
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .hero {
+    min-height: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1.08fr) minmax(115px, 0.92fr) !important;
+    gap: 8px !important;
+
+    /* Remove the large empty vertical space */
+    padding: 18px 0 22px !important;
+    min-height: auto !important;
+    height: auto !important;
+
+    align-items: center;
+  }
+
+  /* LEFT TEXT */
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .eyebrow {
+    font-size: 7px !important;
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-size: clamp(25px, 7.4vw, 36px) !important;
+    line-height: 1.02 !important;
+    margin: 8px 0 12px !important;
+  }
+
+  .hero-text {
+    font-size: 10px !important;
+    line-height: 1.45 !important;
+  }
+
+  .hero-buttons {
+    margin: 16px 0 !important;
+    gap: 6px !important;
+  }
+
+  .hero-buttons .btn {
+    padding: 9px 10px !important;
+    font-size: 8px !important;
+  }
+
+  .trust-row {
+    gap: 12px !important;
+  }
+
+  .trust-row strong {
+    font-size: 13px !important;
+  }
+
+  .trust-row small {
+    font-size: 6px !important;
+  }
+
+
+  /* RIGHT IMAGE */
+  .hero-visual {
+    order: initial !important;
+    height: 285px !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    position: relative;
+  }
+
+  .hero-visual .hero-person {
+    width: 100% !important;
+    max-width: 190px !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+  }
+
+  .glow {
+    width: 190px !important;
+    height: 190px !important;
+  }
+
+
+  /* FLOATING CARDS
+     Keep them away from the face */
+  .floating-card {
+    transform: scale(0.72) !important;
+    transform-origin: center;
+    padding: 6px 8px !important;
+    gap: 5px !important;
+    z-index: 5;
+  }
+
+  .floating-card small {
+    font-size: 5px !important;
+  }
+
+  .floating-card b {
+    font-size: 6px !important;
+  }
+
+  .float-icon {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 7px !important;
+  }
+
+  /* Market Trend card — upper/right edge */
+  .float-one {
+    right: -18px !important;
+    top: 0 !important;
+  }
+
+  /* Risk card — lower/left edge */
+  .float-two {
+    left: -22px !important;
+    bottom: 0 !important;
+  }
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr) minmax(105px, 0.82fr) !important;
+    gap: 5px !important;
+    padding: 14px 0 18px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+  }
+
+  .hero-text {
+    font-size: 9px !important;
+  }
+
+  .hero-buttons {
+    margin: 13px 0 !important;
+  }
+
+  .hero-buttons .btn {
+    padding: 8px 8px !important;
+    font-size: 7px !important;
+  }
+
+  .hero-visual {
+    height: 265px !important;
+  }
+
+  .hero-visual .hero-person {
+    max-height: 255px !important;
+    max-width: 175px !important;
+  }
+
+  .glow {
+    width: 170px !important;
+    height: 170px !important;
+  }
+
+  .floating-card {
+    transform: scale(0.62) !important;
+  }
+
+  .float-one {
+    right: -25px !important;
+    top: -2px !important;
+  }
+
+  .float-two {
+    left: -28px !important;
+    bottom: -2px !important;
+  }
+}
